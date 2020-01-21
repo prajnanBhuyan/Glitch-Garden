@@ -6,4 +6,11 @@ public class Defender : MonoBehaviour
 {
     [SerializeField]
     int starCost = 100;
+
+    public int Cost { get { return starCost; } }
+
+    public void AddStars(int amount)
+    {
+        FindObjectOfType<StarDisplay>().AddStars(amount);
+    }
 }
