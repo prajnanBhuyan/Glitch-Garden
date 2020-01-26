@@ -315,12 +315,12 @@ PrefabInstance:
     - target: {fileID: 1504256138030464523, guid: 51ec54956294e4e4ba4e59e44bf3b6ce,
         type: 3}
       propertyPath: minSpawnDelay
-      value: 10
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1504256138030464523, guid: 51ec54956294e4e4ba4e59e44bf3b6ce,
         type: 3}
       propertyPath: maxSpawnDelay
-      value: 10
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 51ec54956294e4e4ba4e59e44bf3b6ce, type: 3}
@@ -394,12 +394,12 @@ PrefabInstance:
     - target: {fileID: 1504256138030464523, guid: 51ec54956294e4e4ba4e59e44bf3b6ce,
         type: 3}
       propertyPath: minSpawnDelay
-      value: 10
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1504256138030464523, guid: 51ec54956294e4e4ba4e59e44bf3b6ce,
         type: 3}
       propertyPath: maxSpawnDelay
-      value: 10
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 51ec54956294e4e4ba4e59e44bf3b6ce, type: 3}
@@ -794,8 +794,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54d1511a131cbec429776fe7befc83ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defenderPrefab: {fileID: 7846440325442217724, guid: 258fce2f4f0dad94085db98502530488,
-    type: 3}
+  defenderPrefab: {fileID: 798609958, guid: 40402a4204dda2f4083f32585d80c9e5, type: 3}
 --- !u!212 &1676383333
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -914,12 +913,12 @@ PrefabInstance:
     - target: {fileID: 1504256138030464523, guid: 51ec54956294e4e4ba4e59e44bf3b6ce,
         type: 3}
       propertyPath: minSpawnDelay
-      value: 10
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1504256138030464523, guid: 51ec54956294e4e4ba4e59e44bf3b6ce,
         type: 3}
       propertyPath: maxSpawnDelay
-      value: 10
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 51ec54956294e4e4ba4e59e44bf3b6ce, type: 3}
@@ -1161,12 +1160,12 @@ PrefabInstance:
     - target: {fileID: 1504256138030464523, guid: 51ec54956294e4e4ba4e59e44bf3b6ce,
         type: 3}
       propertyPath: minSpawnDelay
-      value: 10
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1504256138030464523, guid: 51ec54956294e4e4ba4e59e44bf3b6ce,
         type: 3}
       propertyPath: maxSpawnDelay
-      value: 10
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 51ec54956294e4e4ba4e59e44bf3b6ce, type: 3}
@@ -1240,12 +1239,12 @@ PrefabInstance:
     - target: {fileID: 1504256138030464523, guid: 51ec54956294e4e4ba4e59e44bf3b6ce,
         type: 3}
       propertyPath: minSpawnDelay
-      value: 10
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1504256138030464523, guid: 51ec54956294e4e4ba4e59e44bf3b6ce,
         type: 3}
       propertyPath: maxSpawnDelay
-      value: 10
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 51ec54956294e4e4ba4e59e44bf3b6ce, type: 3}
