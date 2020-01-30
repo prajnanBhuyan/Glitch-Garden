@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class AttackerSpawner : MonoBehaviour
@@ -8,7 +9,7 @@ public class AttackerSpawner : MonoBehaviour
     [SerializeField]
     float maxSpawnDelay = 5f;
     [SerializeField]
-    Attacker attackerPrefab;
+    Attacker[] attackerPrefabArray;
 
     bool spawn = true;
     
@@ -18,19 +19,20 @@ public class AttackerSpawner : MonoBehaviour
         while (spawn)
         {
             yield return new WaitForSeconds(Random.Range(minSpawnDelay, maxSpawnDelay));
-            Spawn();
+            SpawnAttacker();
         }
     }
 
-    private void Spawn()
+    public void SpawnAttacker()
+    {
+        var index = Random.Range(0, attackerPrefabArray.Length);
+        Debug.Log($"Index: {index}");
+        Spawn(attackerPrefabArray[index]);
+    }
+
+    private void Spawn(Attacker attackerPrefab)
     {
         var newAttacker = Instantiate(attackerPrefab, transform.position, Quaternion.identity);
         newAttacker.transform.parent = transform;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
     }
 }
