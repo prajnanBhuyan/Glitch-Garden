@@ -48,7 +48,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
-  damage: 50
+  damage: 200
   passThrough: 0
 --- !u!95 &5231088277629534589
 Animator:
