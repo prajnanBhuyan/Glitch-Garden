@@ -12,9 +12,19 @@ public class Attacker : MonoBehaviour
 
     GameObject currentTarget;
 
+    private void Awake()
+    {
+        FindObjectOfType<LevelController>().AttackerSpawned();
+    }
+
+    private void OnDestroy()
+    {
+        FindObjectOfType<LevelController>()?.AttackerDestroyed();
+    }
+
     void Update()
     {
-        transform.Translate(Vector2.left * movementSpeed  * Time.deltaTime);
+        transform.Translate(Vector2.left * movementSpeed * Time.deltaTime);
         UpdateAnimationState();
     }
 
@@ -40,7 +50,7 @@ public class Attacker : MonoBehaviour
     public void StrikeCurrentTarget(float damage)
     {
         if (!currentTarget) return;
-        
+
         Health health = currentTarget.GetComponent<Health>();
         if (health)
         {

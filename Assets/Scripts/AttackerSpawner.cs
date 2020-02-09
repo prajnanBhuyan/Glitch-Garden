@@ -23,10 +23,14 @@ public class AttackerSpawner : MonoBehaviour
         }
     }
 
+    public void StopSpawning()
+    {
+        spawn = false;
+    }
+
     public void SpawnAttacker()
     {
         var index = Random.Range(0, attackerPrefabArray.Length);
-        Debug.Log($"Index: {index}");
         Spawn(attackerPrefabArray[index]);
     }
 
