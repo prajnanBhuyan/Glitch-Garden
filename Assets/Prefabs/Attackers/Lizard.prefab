@@ -94,6 +94,7 @@ GameObject:
   - component: {fileID: 7087029248612084014}
   - component: {fileID: 2280473865574806678}
   - component: {fileID: 2725597554984935122}
+  - component: {fileID: 2670497723261692680}
   m_Layer: 0
   m_Name: Lizard
   m_TagString: Untagged
@@ -175,7 +176,7 @@ PolygonCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7839111887857055867}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
@@ -242,3 +243,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad212ffcb9189f9408c97797369f05cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!70 &2670497723261692680
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7839111887857055867}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.5723248, y: 0.009306312}
+  m_Size: {x: 0.31387794, y: 0.6675098}
+  m_Direction: 0

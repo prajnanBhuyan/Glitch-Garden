@@ -17,8 +17,8 @@ public class LevelController : MonoBehaviour
 
     private void Start()
     {
-        winLabel.SetActive(false);
-        loseLabel.SetActive(false);
+        winLabel?.SetActive(false);
+        loseLabel?.SetActive(false);
     }
 
     public void AttackerSpawned()
@@ -47,7 +47,7 @@ public class LevelController : MonoBehaviour
     public void HandleLoseCondition()
     {
         loseLabel.SetActive(true);
-        //Time.timeScale = 0;
+        Time.timeScale = 0;
     }
 
     public void LevelTimerFinished()
