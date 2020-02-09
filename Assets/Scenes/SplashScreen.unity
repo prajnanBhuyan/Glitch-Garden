@@ -743,6 +743,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: LoadSound
       objectReference: {fileID: 0}
+    - target: {fileID: 5938069507459508854, guid: 39bd8e7c3af37e344a8fd3415f8c1c49,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5938069507459508852, guid: 39bd8e7c3af37e344a8fd3415f8c1c49,
         type: 3}
       propertyPath: m_LocalPosition.x
