@@ -14,6 +14,7 @@ public class LevelController : MonoBehaviour
 
     int numberOfAttackers;
     bool levelTimerFinished;
+    bool roundOver;
 
     private void Start()
     {
@@ -38,16 +39,24 @@ public class LevelController : MonoBehaviour
 
     IEnumerator HandleWinCondition()
     {
-        winLabel.SetActive(true);
-        GetComponent<AudioSource>().Play();
-        yield return new WaitForSeconds(waitToLoad);
-        FindObjectOfType<LevelLoader>().LoadNextScene();
+        if (!roundOver)
+        {
+            roundOver = true;
+            winLabel.SetActive(true);
+            GetComponent<AudioSource>().Play();
+            yield return new WaitForSeconds(waitToLoad);
+            FindObjectOfType<LevelLoader>().LoadNextScene();
+        }
     }
 
     public void HandleLoseCondition()
     {
-        loseLabel.SetActive(true);
-        Time.timeScale = 0;
+        if (!roundOver)
+        {
+            roundOver = true;
+            loseLabel.SetActive(true);
+            Time.timeScale = 0;
+        }
     }
 
     public void LevelTimerFinished()
