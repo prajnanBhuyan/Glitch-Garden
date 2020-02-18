@@ -15,11 +15,14 @@ public class LevelController : MonoBehaviour
     int numberOfAttackers;
     bool levelTimerFinished;
     bool roundOver;
+    AudioSource audioSource;
 
     private void Start()
     {
         winLabel?.SetActive(false);
         loseLabel?.SetActive(false);
+        audioSource = GetComponent<AudioSource>();
+        audioSource.volume = PlayerPrefsController.GetMasterVolume();
     }
 
     public void AttackerSpawned()
@@ -43,7 +46,7 @@ public class LevelController : MonoBehaviour
         {
             roundOver = true;
             winLabel.SetActive(true);
-            GetComponent<AudioSource>().Play();
+            audioSource.Play();
             yield return new WaitForSeconds(waitToLoad);
             FindObjectOfType<LevelLoader>().LoadNextScene();
         }
